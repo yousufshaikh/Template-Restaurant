@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cartApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/cart-app.css">
+<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/carousel.css">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-cloak>
+<nav class="navbar cart-nav navbar-fixed-top" ng-controller="MainController">
+  <div class=""> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Restaurant</a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="CRM.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a ng-click="">Specialities</a></li>
+        <li><a ng-click="">Menu</a></li>
+        <li><a ng-click="">About Us</a></li>
+        <li><a ng-click="">Contact Us</a></li>
+
+        <!-- <li><a ng-click="Mycart()"><span class="glyphicon glyphicon-shopping-cart"><span class="icon-num badge">{{orderCount}}</span> </span></a></li> -->
+      </ul>
+      <!-- <form class="navbar-form navbar-right nav-form-left" role="search">
+        <div class="form-group">
+			<div class="input-group">
+          <span class="input-group-addon input-focus">
+            <i class="material-icons">search</i>
+          </span>
+				  <input type="text" id="srch" class="form-control animated fadeIn searchbar" placeholder="" ng-model="search">
+			</div>
+        </div>
+        <div class="dropdown">
+              <button id="para" class="btn cart-order dropdown-toggle" style="display: none" data-toggle="dropdown" ><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+              </ul>
+        </div>
+              <button class="btn cart-order" id="login" data-toggle="modal" data-target="#loginModal" ng-click="login()">Login</button>
+      </form> -->
+      <div class="clearfix"></div>
+</div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+    <ng-view></ng-view>
+
+
+
+
+
+      <!--LogIn Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{{header}}</h4>
+        </div>
+        <div class="modal-body">
+          <form action="">  
+            <label>
+                <p align="left"><strong> Username or Email:</strong></p>
+                <input type="text" id="username" class="form-control" size="40" placeholder="Enter Email">
+            </label></br>
+            <label id="append">
+                <p align="left"><strong> Password:</strong></p>  
+                <input type="password" class="form-control" size="40" placeholder="Enter Password">
+            </label></br>
+          </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn cart-order modal-button" id="btn1" data-dismiss="modal">{{header}}</button>
+            <a href="#" ng-click="signup()" >Create a new account.</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--***************LogIn Modal End ***********-->
+
+
+
+<!-- SignUp Modal -->
+  <div class="modal fade" id="signUpModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SignUp</h4>
+        </div>
+        <div class="modal-body">
+          <form action="">  
+            <label>
+                <p align="left"><strong>Email Adress:</strong></p>
+                <input type="text" class="form-control" size="40" placeholder="Enter Email">
+            </label></br>
+            <label>  
+                <p align="left"><strong>Password:</strong></p>
+                <input type="password" class="form-control" size="40"  placeholder="Enter Password">
+            </label></br>
+            <label>  
+               <p align="left"><strong> Confirm Password:</strong></p>
+                <input type="password" class="form-control" size="40"  placeholder="Re-Enter Password">
+            </label>
+          </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn cart-order modal-button"  data-dismiss="modal">SignUp</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--***************SingUp Modal End ***********-->
+
+
+
+
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>__ Restaurant __</h2>
+        <!-- <p>Copyright © BAIT AL MALAKI. All rights reserved.</p> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="lib/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="/lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="/lib/angular/angular-resource.js"></script>
+<script src="/lib/infiniteScroll.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/slStorage.js"></script>
+<script src="js/controllers/maincontroller.js"></script>
+<script src="js/controllers/cartcontroller.js"></script>
+<script src="js/controllers/menucontroller.js"></script>
+
+
+<script>  
+  $(document).ready(function(){
+    $('#btn1').click(function(){
+      var user = document.getElementById('username').value;
+      //$('#login').remove();
+      $('#login').css('display','none');
+      $('#para').prepend(user);
+      $('#para').css('display','block');
+    });
+
+    $('#logout').click(function(){
+      $('#para').css('display','none');
+      $('#login').css('display','block');
+    });
+  });
+
+
+</script>
+
+
+</body>
+</html>

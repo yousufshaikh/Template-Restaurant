@@ -1,0 +1,65 @@
+[{
+     "id":1,
+     "name":"Prawn",
+     "price":400,
+     "img":"dish-2.png",
+     "disc":0,
+     "description":"This is the dish-2"
+    },
+    {
+     "id":2,
+     "name":"Grilled Salmon",
+     "price":500,
+     "img":"dish-3.png",
+     "disc":0,
+     "description":"This is the dish-3"
+    },
+    {
+     "id":3,
+     "name":"Sweet&spicy chicken",
+     "price":200,
+     "img":"dish-1.png",
+     "disc":0,
+     "description":"This is the food-11"
+    },
+    {
+     "id":4,
+     "name":"Chicken Schnitzel",
+     "price":350,
+     "img":"dish-4.png",
+     "disc":0,
+     "description":"This is the dish-4"
+    },
+{
+     "id":5,
+     "name":"Prawn-5",
+     "price":300,
+     "img":"dish-2.png",
+     "disc":0,
+     "description":"This is the dish-5"
+    },
+    {
+     "id":6,
+     "name":"Grilled Salmon-6",
+     "price":550,
+     "img":"dish-3.png",
+     "disc":0,
+     "description":"This is the dish-6"
+    },
+    {
+     "id":7,
+     "name":"Sweet&spicy chicken",
+     "price":250,
+     "img":"dish-1.png",
+     "disc":0,
+     "description":"This is the dish-7"
+    },
+    {
+     "id":8,
+     "name":"Chicken Schnitzel-8",
+     "price":650,
+     "img":"dish-4.png",
+     "disc":0,
+     "description":"This is the dish-8"
+    }
+]

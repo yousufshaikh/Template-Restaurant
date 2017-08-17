@@ -1,0 +1,83 @@
+.cart-nav{
+	background-color: rgba(0,0,0,0.3);
+    margin-bottom: -54px;
+}
+.header-section{
+    background: url(../images/dish-12.jpg) no-repeat;
+    height: 600px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+    background-attachment:fixed;
+}
+#myDefaultNavbar1 > ul > li > a,div.navbar-header > a.navbar-brand{
+	color:#fff;
+}
+#myDefaultNavbar1 > ul > li.active > a,#myDefaultNavbar1 > ul > li.open > a{
+    background-color: rgba(244,174,22,0.2);
+    border-bottom: 2px solid orange;
+}
+#myDefaultNavbar1 > ul > li > a:hover{
+    background-color: rgba(244,174,22,0.2);
+    border-bottom: 2px solid orange;
+}
+.input-group .searchbar{
+	background: transparent;
+    border: 0px;
+	box-shadow: none;
+}
+.input-group .searchbar:focus{
+	border-bottom: 1px solid orange;
+}
+#myDefaultNavbar1 > form > div > div > span.input-group-addon{
+	background: transparent;
+    border: none;
+    color: orange;
+}
+.item{
+    margin-left: 480px;
+}
+p.menu-item {
+    width: 400px;
+}
+.breakfastimg{
+     background: url(../images/dish-11.jpg) no-repeat;
+    height: 400px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+    background-attachment:fixed;
+}
+.mealimg{
+     background: url(../images/meal-5.jpg) no-repeat;
+    height: 400px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+    background-attachment:fixed;
+}
+.dessert{
+     background: url(../images/coffee-1.jpg) no-repeat;
+    height: 400px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+    background-attachment:fixed;
+}
+.box1{
+    height: 500px;
+     width: 90%;
+    display: block;
+    font-family: 'Khand';
+    border-bottom: 0;
+    text-transform: capitalize;
+    background-color: #938372;
+}
+.menufooter{
+     background: url(../images/bg-1.jpg) no-repeat;
+    height: 400px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+    background-attachment:fixed;
+}

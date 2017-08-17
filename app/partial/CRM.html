@@ -1,0 +1,379 @@
+
+<section class="header-section">
+  
+</section>
+<section>
+  <div class="container"> 
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>__ Our most loved dishes __</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
+        </div>
+      </div>
+  </div>
+
+
+
+    <!--<div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center" style="color:#000000;">__Today's Specials__</h1><br>
+                <ul class="menu-list text-center main-list">
+                  <li><a class="active" href="#">ALL</a></li>
+                  <li><a href="#">BREAD</a></li>
+                  <li><a href="#">CHICKEN</a></li>
+                  <li><a href="#">FISH</a></li>
+                  <li><a href="#">PASTA</a></li>
+                  <li><a href="#">PRAWNS</a></li>
+                  <li><a href="#">SALADS</a></li>  
+                </ul>
+              </div>
+          </div>
+    </div>-->
+
+  <div class="row">
+    <div class="col-md-12">
+          <div class="well"> 
+                <div id="dishCarousel" class="dishcarousel slide" data-interval="false" data-ride="carousel">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#dishCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#dishCarousel" data-slide-to="1"></li>
+                    <li data-target="#dishCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                  <div class="row-fluid">
+                    <div class="col-md-3 text-center" ng-repeat="dish in dishes | orderBy:'name' | limitTo:4">
+                      <a href="#x" class="thumbnail">
+                      <h3 class="menu-grid">{{dish.name}}</h3>
+                      <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                      <a ng-click="menu()"><img src="images/{{dish.img}}" alt="Dish-1"></a>
+                      <p>Description</p>
+                        <h3><strong>Rs.{{dish.price}}</strong></h3>
+                      </a>
+                    </div>
+                  </div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                 
+                </div><!--/carousel-inner-->
+                 
+                <!-- <a class="left carousel-control" href="#dishCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#dishCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a> -->
+                </div><!--/myCarousel-->
+                 
+            </div><!--/well-->   
+    </div>
+  </div>
+
+
+
+    <!-- <div class="row">
+      <div class="col-md-3 text-center" ng-repeat="dish in dishes | orderBy:'name'">
+        <h3 class="menu-grid">{{dish.name}}</h3>
+        <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <a ng-click="menu()"><img src="images/{{dish.img}}" alt="Dish-1"></a>
+        <p>Cras sit amet nibh libero, in gravida nulla. 
+          Nulla vel metus scelerisque ante sollicitudin commodo. 
+          Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+          <h3><strong>Rs.{{dish.price}}</strong></h3>
+      </div>      
+    </div> -->
+</section>
+
+
+<section class="footer">
+        <!--*************************************Carousel Start**********************************************-->
+        <!--<div class="row">
+          <div class="col-md-6 text-center">
+              <img src="images/400x400.gif" alt="">
+                <h3>Lorem ipsum dolor sit amet, consectetur elit</h3>
+                <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            </div>
+          <div class="col-md-6 text-center">
+              <img src="images/400x400.gif" alt="">
+                <h3>Lorem ipsum dolor sit amet, consectetur elit</h3>
+                <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            </div>
+        </div>-->
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center" style="color:#fff;">__Today's Specials__</h1><br>
+                <ul class="menu-list text-center">
+                  <li><a href="#">ALL</a></li>
+                  <li><a href="#">BREAD</a></li>
+                  <li><a href="#">CHICKEN</a></li>
+                  <li><a href="#">FISH</a></li>
+                  <li><a href="#">PASTA</a></li>
+                  <li><a href="#">PRAWNS</a></li>
+                  <li><a href="#">SALADS</a></li>  
+                </ul>
+              </div>
+          </div>
+
+  <div class="row">
+    <div class="col-md-12">
+          <div class="well"> 
+                <div id="myCarousel" class="carousel slide" data-interval="false">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                  <div class="row-fluid">
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                      <img src="images/special-1.jpg" alt="Image" style="max-width:100%;" />
+                        <!-- <figcaption class="figCap">
+                          <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                      <img src="images/special-2.jpg" alt="Image" style="max-width:100%;" />
+                        <!-- <figcaption class="figCap">
+                          <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-3.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                  </div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                <div class="item">
+                  <div class="row-fluid">
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-4.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-5.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                        </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-6.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                    </div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                <div class="item">
+                  <div class="row-fluid">
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-7.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-1.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#x" class="thumbnail">
+                        <img src="images/special-2.jpg" alt="Image" style="max-width:100%;" />
+                          <!-- <figcaption class="figCap">
+                            <h3 class="capHeading">Lorem ipsum dolor sit amet, consectetur elit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                          </figcaption> -->
+                      </a>
+                    </div>
+                  </div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                </div><!--/carousel-inner-->
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </div><!--/myCarousel-->
+                 
+            </div><!--/well-->   
+    </div>
+  </div>
+</div>
+        <!--************************************Carousel End***************************************************-->
+        
+  </div>
+</section>
+<section class="footer-grid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1 class="text-center">__Deals &amp; Promotions__</h1>
+      </div>
+    </div>
+  </div>
+<div class="row">
+          <div class="col-md-4 text-center col-sm-6 col-xs-6">
+            <img src="images/overlay-2.png" alt="overlay">
+              <h1>__ Our Menu __</h1>
+              <h3 class="menu-grid">Goodness &amp; Taste</h3>
+              <p class="text-center">Sumptuous delicious food baked in open ovens with spices </p><br>
+              <a href="modern-menu.html"><button class="btn btn-default">See the menu</button></a><br><br>
+              <img src="images/dish-5.png" alt="dish-5">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+             <h3>Chicken Schnitzel .............. $ 6.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Fish Cakes ......................... $ 8.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Sweet &amp; Spicy Chicken ...... $ 6.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Thai Red Curry ................... $ 7.50</h3>
+             <p class="menu-item">Chicken . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6 hidden-xs hidden-sm">
+             <h3>Chicken Schnitzel .............. $ 6.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Fish Cakes ......................... $ 8.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Sweet &amp; Spicy Chicken ...... $ 6.50</h3>
+             <p class="menu-item">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p><br>
+             <h3>Thai Red Curry ................... $ 7.50</h3>
+             <p class="menu-item">Chicken . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p>
+             <img src="images/overlay-3.png" alt="overlay">
+          </div>
+      </div>
+</section>
+<br>
+<br>
+<div class="section" style="background-color:#938372;">
+    <div class="row">
+      <div class="col-lg-6 col-md-4">
+          <h3 class="text-center" style="color:#fff; padding:22px; ">Drop us your email address and stay connected</h3>
+      </div>
+      <div class="col-lg-4 col-md-4">
+          <h3 class="text-center">NEWSLETTER</h3>
+          <form>
+            <div class="form-group col-lg-9 col-md-8 col-sm-10 col-xs-10">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <button type="submit" class="newsletter-button btn btn-default pull-right">Subscribe</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="reservation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id, enim nostrum fugit accusantium. 
+          Doloribus reiciendis expedita repudiandae dicta itaque facere optio iste vel iusto, accusamus. Facilis, quo quod nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id, enim nostrum fugit accusantium. 
+          Doloribus reiciendis expedita repudiandae dicta itaque facere optio iste vel iusto, accusamus. Facilis, quo quod nam.</p>
+      </div>
+      <div class="col-md-4">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id, enim nostrum fugit accusantium. 
+          Doloribus reiciendis expedita repudiandae dicta itaque facere optio iste vel iusto, accusamus. Facilis, quo quod nam.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id, enim nostrum fugit accusantium. 
+          Doloribus reiciendis expedita repudiandae dicta itaque facere optio iste vel iusto, accusamus. Facilis, quo quod nam.</p>
+      </div>
+      <div class="col-md-4">
+            <div class="box">
+                <form action="" name="reservationForm">
+                  <h3 class="text-center" style="padding-top: 10px;">__Reservation__</h3>
+                    <div class="form-group">
+                      <div class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        <input type="text" class="form-control" id="name" name="user" ng-model="user"  placeholder="Name" required/>
+                        <span ng-show="reservationForm.user.$error.required">Name is required</span>
+                      </div>
+                    </div><br>
+
+                    <div class="form-group">
+                      <div class="inner-addon left-addon">
+                        <!--<i class="fa fa-users"></i>-->
+                        <i class="glyphicon glyphicon-user"></i>
+                        <input type="text" class="form-control" name="guests" ng-model="guests" placeholder="Guests" required/>
+                        <span ng-show="reservationForm.guests.$error.required">No. of Guests is required</span>
+                      </div>
+                    </div><br>
+
+                    <div class="form-group">
+                      <div class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                        <input type="date" class="form-control" name="date" ng-model="date" placeholder="Date" required/>
+                        <span ng-show="reservationForm.date.$error.required">Date is required</span>
+                      </div>
+                    </div><br>
+
+                  <div class="form-group">
+                      <div class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <input type="time" class="form-control" name="time" ng-model="time" placeholder="time" required/>
+                        <span ng-show="reservationForm.time.$error.required">Time is required</span>
+                      </div>
+                    </div><br>
+
+                    <div class="form-group">
+                      <div class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        <input type="tel" class="form-control" name="phone" ng-model="phone" placeholder="Phone (0000-1234567)" required/>
+                        <span ng-show="reservationForm.phone.$error.required">Phone No. is required</span>
+                      </div>
+                    </div><br>
+
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" ng-disabled="reservationForm.$invalid" ng-click="reserved()" value="Reserve Table" >
+                    </div>
+                </form><br>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+

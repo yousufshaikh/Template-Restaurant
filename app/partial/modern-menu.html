@@ -1,0 +1,60 @@
+
+  <section class="modern-menu-header-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1 class="text-center" style="color:#fff; padding-top:130px">__ Our Menu __</h1>
+          <p class="text-center" style="color:#fff;">THE TRUE TASTE OF GOOD DESIGN
+            <p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">__Today's Menu__</h1><br>
+          <ul class="menu-list list text-center">
+            <li><a class="active" href="#">ALL</a></li>
+            <li><a href="#">BREAD</a></li>
+            <li><a href="#">CHICKEN</a></li>
+            <li><a href="#">FISH</a></li>
+            <li><a href="#">PASTA</a></li>
+            <li><a href="#">PRAWNS</a></li>
+            <li><a href="#">SALADS</a></li><br><br>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="container">
+    <div class="row">
+      <div infinite-scroll='loadMore()' infinite-scroll-distance='2' infinite-scroll-disabled="true">          
+        <div ng-repeat="image in images"> 
+          <div class="menu-img col-md-6  col-sm-6 col-xs-6" ng-repeat="dish in dishes | orderBy : 'name'" >
+              <img align="left" data-ng-src="images/{{dish.img}}" alt="food">
+              <h3 class="menustyle">{{dish.name}} ........... ${{dish.price}}</h3>
+              <p class="menu-item para">Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce</p>
+              <button id="counter" class="order btn pull-right orderbtn" ng-click="count($index)">Add to Cart</button>
+              <br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div>
+    <div id="myCarousel" class="carousel slide" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+    </div>
+  </div>

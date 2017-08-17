@@ -1,0 +1,85 @@
+.modern-header-section{
+    background: url(../images/dish-12.jpg) no-repeat;
+    height: 600px;
+    background-size: 100% 600px;
+    background-attachment:fixed;
+}
+
+.icon-num{
+    position: absolute;
+    top: -10px;
+    background-color: #d2c82a;
+}
+.order{
+    background-color: #d2c82a;
+}
+ul.pagination > li > a{
+    color:#000000;
+    border-color: #d2c82a;
+}
+#myDefaultNavbar1 > ul > li > a,div.navbar-header > a.navbar-brand{
+	color:#fff;
+}
+#myDefaultNavbar1 > ul > li.active > a,#myDefaultNavbar1 > ul > li.open > a{
+    background-color: rgba(244,174,22,0.2);
+    border-bottom: 2px solid orange;
+}
+#myDefaultNavbar1 > ul > li > a:hover{
+    background-color: rgba(244,174,22,0.2);
+    border-bottom: 2px solid orange;
+}
+.input-group .searchbar{
+	background: transparent;
+    border: 0px;
+	box-shadow: none;
+}
+.input-group .searchbar:focus{
+	border-bottom: 1px solid orange;
+}
+#myDefaultNavbar1 > form > div > div > span.input-group-addon{
+	background: transparent;
+    border: none;
+    color: orange;
+}
+.menu-list{
+    margin-bottom: 28px;
+    margin-top: 4px;
+    text-decoration: none;
+}
+.menu-list > li{
+    display: inline;
+    padding: inherit;
+
+}
+.menu-list > li > a{
+    color: #382f2f;
+    font-size: x-large;
+    }
+p.menu-item {
+    /*margin-left: 275px;*/
+    width: 400px;
+}
+.menu-list > li > a:hover{
+      color: #d2c82a;
+      text-decoration: none;
+      position: inherit;
+
+    }
+.menu-list > li a.active {
+    color: #d2c82a;
+    border-bottom: 2px solid #d2c82a;
+    text-decoration: none;
+    }
+
+.menufooter{
+     background: url(../images/bg-1.jpg) no-repeat;
+    height: 200px;
+    background-size: 100% 600px;
+    background-color: rgba(151,0,0,0.15);
+    background-blend-mode: luminosity;
+}
+
+.menu-img img{
+    border-radius: 50px;
+}
+
